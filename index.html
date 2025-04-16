@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>small-figma-web-page</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -24,7 +28,7 @@
                     <li><a href="#">Pricing</a></li>
                 </ul>
                 <div class="register-btn">
-                    <button>Register Now &rarr;</button>
+                    <button class="btn-1">Register Now &rarr;</button>
                 </div>
             </div>
          </nav>
@@ -32,7 +36,7 @@
           <section class="home">
             <div class="row">
                 <div class="col-1">
-                    <h1>Lessons and insights from 8 years</h1>
+                    <h1>Lessons and insights <span>from 8 years</span></h1>
                     <p>Where to grow your business as a photographer: site or social media?</p>
                     <button class="home-button">
                         Register
@@ -45,9 +49,9 @@
           </section>
 <!-- second-section -->
  <section class="second">
-    <h2>Our Clients</h2>
+    <h2 class="h2-second-section">Our Clients</h2>
     <p class="second-sec-p">We have been working with some Fortune 500+ clients</p>
-    <div class="row">
+    <div class="second-section-row">
         <img src="./assets/Logo (1).png" alt="" class="second-section-img">
         <img src="./assets/Logo (2).png" alt="" class="second-section-img">
         <img src="./assets/Logo (3).png" alt="" class="second-section-img">
@@ -60,29 +64,29 @@
  </section>
  <!-- third-section -->
   <section class="third">
-    <h2>Manage your entire community in a single system</h2>
-    <p>Who is Nextcent suitable for?
+    <h2 class="third-section-h2">Manage your entire community in a single system</h2>
+    <p class="third-section-p">Who is Nextcent suitable for?
     </p>
-    <div class="row">
-        <div class="col-1">
-            <img src="./assets/Icon.png" alt="">
-            <h3>Membership Organisations</h3>
-            <p>Our membership management software provides
+    <div class="third-section-row">
+        <div class="col-c">
+            <img src="./assets/Icon.png" alt="" class="col-c-img">
+            <h3 class="col-c-h3">Membership Organisations</h3>
+            <p class="col-c-p">Our membership management software provides
                  full automation 
                 of membership renewals and payments</p>
         </div>
-        <div class="col-1">
-            <img src="./assets/Icon (1).png" alt="">
-            <h3>National Associations</h3>
-            <p>Our membership management 
+        <div class="col-c">
+            <img src="./assets/Icon (1).png" alt=""  >
+            <h3 class="col-c-h3">National Associations</h3>
+            <p class="col-c-p">Our membership management 
                 software provides full 
                 automation of membership
                  renewals and payments</p>
         </div>
-        <div class="col-1">
+        <div class="col-c">
             <img src="./assets/Icon (2).png" alt="">
-            <h3>Clubs And Groups</h3>
-            <p>Our membership management 
+            <h3 class="col-c-h3">Clubs And Groups</h3>
+            <p class="col-c-p">Our membership management 
                 software provides full automation 
                 of membership renewals 
                 and payments</p>
@@ -92,44 +96,51 @@
   <!-- fourth-section -->
    <section class="fourth">
     <h2 class="section-fourth-h2">Pellentesque suscipit fringilla libero eu.</h2>
+    <div class="btn-div">
     <button class="section-fourth-btn">Get a Demo &rarr;</button>
+    </div>
    </section>
    <!-- footer -->
     <footer>
         <div class="footer-row">
-            <div class="col-">
+            <div class="footer-col-1">
               <div class="footer-logo">
-                <img src="./assets/Logo.png" alt="">
+               <img src="./assets/Icon.png" alt="" id="icon">
+               <p class="icon-p">Nexcent</p>
               </div>
               <p class="footer-p1">Copyright © 2020 Landify UI Kit.</p>
               <p class="footer-p2">All rights reserved</p>
-              <div class="footer-icon">
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+              <div class="footer-icon-1">
+                <i class="fa-brands fa-square-instagram" id="footer-icon"></i>
+                <i class="fa-solid fa-envelope" id="footer-icon"></i>
+                <i class="fa-brands fa-twitter" id="footer-icon"></i>
+                <i class="fa-brands fa-youtube" id="footer-icon"></i>
               </div>
 
             </div>
-            <div class="col-"><h4>Company</h4>
+            <div class="footer-col-2"><h4 class="footer-col-2-h4">Company</h4>
+                <ul class="footer-ul">
                 <li>About Us</li>
                 <li>Blog</li>
                 <li>Contact Us</li>
                 <li>Pricing</li>
                 <li>Testimonials</li>
+                </ul>
             </div>
-            <div class="col-">
-                <h4>Support</h4>
+            <div class="footer-col-3">
+                <h4 class="footer-col-2-h4">Support</h4>
+                <ul class="footer-ul">
                 <li>Help Center</li>
                 <li>Terms of Service</li>
                 <li>Legal</li>
                 <li>Privacy Policy</li>
                 <li>Status</li>
+                </ul>
             </div>
-            <div class="col-">
-                <h4>Stay up to date</h4>
+            <div class="footer-col-4">
+                <h4 class="footer-col-2-h4">Stay up to date</h4>
                 <div class="input-wrapper">
-                <input type="email" placeholder="Your email address">
+                <input type="email" placeholder="Your email address" class="footer-input">
                 <i class="fa-solid fa-paper-plane"></i>
                 </div>
             </div>
